@@ -24,7 +24,7 @@ Download the project locally and ```npm install``` then ```npm start```
 3. Please follow technology & style standards currently used and bulletted under 'Technologies' header
 4. Commit your changes (`git commit -am 'Add some fooBar'`)
 5. Push to the branch (`git push origin feature/fooBar`)
-6. Create a new Pull Request
+6. Create a new Pull Request for staging branch in this repo
 
 ## To Do:
 * Exception handling - component error states, 'reload' action, timeouts
