@@ -12,7 +12,7 @@ The application is fully client-side and does not save any data anywhere, other 
 * Redux-saga (lightly used so far)
 * styled-components
 * Material UI for some components
-* ethers.js for web3
+* ethers.js for web3 interaction
 
 ## Getting Started
 Download the project locally and ```npm install``` then ```npm start```
