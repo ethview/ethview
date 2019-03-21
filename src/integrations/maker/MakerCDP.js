@@ -25,7 +25,7 @@ const MakerCDP = (props) => {
         
         setLoading(true)
         const maker = await Maker.create("http", {
-            url: 'https://mainnet.infura.io/',
+            url: 'https://mainnet.infura.io/v3/16336a82e72c4f8eb86903e55ac6a8b2',
             web3: {
                 statusTimerDelay: 15000,
             },
