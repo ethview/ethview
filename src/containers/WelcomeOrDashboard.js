@@ -19,7 +19,7 @@ const WelcomeOrDashboard = (props) => {
     const setupWeb3 = async () => {
         //Infura web3
         try {
-            let web3 = new ethers.providers.InfuraProvider('mainnet');
+            let web3 = new ethers.providers.InfuraProvider('mainnet','16336a82e72c4f8eb86903e55ac6a8b2');
             
             props.setWeb3(web3)
             setWeb3Success(true)
