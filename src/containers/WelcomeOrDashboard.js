@@ -7,7 +7,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Welcome from './Welcome'
 import App from '../components/App'
 import { setWeb3, setAccount, setEns } from '../actions'
-import { FaTwitter } from 'react-icons/fa'
+import { FaTwitter, FaGithub } from 'react-icons/fa'
 import  EthViewLogo  from '../images/ethview_logo.png'
 
 
@@ -90,6 +90,7 @@ const WelcomeOrDashboard = (props) => {
                     <React.Fragment>
                         <App/>
                         <Footer>
+                            <StyledLink href="https://github.com/ethview/ethview" target="_blank"><Github /></StyledLink>
                             <StyledLink href="https://twitter.com/ethview" target="_blank"><Twitter /></StyledLink>Reach out on Twitter!
                         </Footer>
                     </React.Fragment>
@@ -117,6 +118,7 @@ const WelcomeOrDashboard = (props) => {
             {
                 (!addressSuccess && web3Success && props.prices.ETH) && 
                 <FixedFooter>
+                    <StyledLink href="https://github.com/ethview/ethview" target="_blank"><Github /></StyledLink>
                     <StyledLink href="https://twitter.com/ethview" target="_blank"><Twitter /></StyledLink>Reach out on Twitter!
                 </FixedFooter>
             }
@@ -182,6 +184,12 @@ const AppWrapper = styled.div`
 
 const Twitter  = styled(FaTwitter)`
     color: #1CA1F2;
+    margin-right:12px;
+    margin-left:10px;
+    font-size:20px;
+`
+const Github = styled(FaGithub)`
+    color: black;
     margin-right:12px;
     margin-left:20px;
     font-size:20px;
