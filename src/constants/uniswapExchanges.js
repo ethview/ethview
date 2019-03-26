@@ -4,6 +4,11 @@ import ZrxLogo from '../images/zrx_logo.svg'
 import BatLogo from '../images/bat_logo.svg'
 import SpankLogo from '../images/spank_logo.svg'
 import LoomLogo from '../images/loom_logo.svg'
+import TUSDLogo from '../images/tusd_logo.svg'
+import FoamLogo from '../images/foam_logo.png'
+import SnxLogo from '../images/snx_logo.svg'
+import sUSDLogo from '../images/sUSD_logo.png'
+
 
 //Method to get all exchange addresses in the future, for now hard-coding
 //https://www.reddit.com/r/UniSwap/comments/atddo2/effective_way_to_get_all_uniswap_exchange/
@@ -43,6 +48,31 @@ export const exchangeInfo = [
         exchangeAddress: "0x417CB32bc991fBbDCaE230C7c4771CC0D69daA6b",
         erc20Address: "0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
         logo: LoomLogo
+    },
+    { 
+        symbol: "TUSD",
+        exchangeAddress: "0x4f30e682d0541eac91748bd38a648d759261b8f3", 
+        erc20Address: "0x8dd5fbCe2F6a956C3022bA3663759011Dd51e73E", 
+        logo: TUSDLogo
+    },
+    { 
+        symbol: "SNX",
+        exchangeAddress: "0x5d8888a212d033cff5f2e0ac24ad91a5495bad62", 
+        erc20Address: "0x3772f9716Cf6D7a09edE3587738AA2af5577483a", 
+        logo: SnxLogo
+        
+    },
+    { 
+        symbol: "sUSD",
+        exchangeAddress: "0xa1ecdcca26150cf69090280ee2ee32347c238c7b", 
+        erc20Address: "0x0cBE2dF57CA9191B64a7Af3baa3F946fa7Df2F25", 
+        logo: sUSDLogo
+    },
+    { 
+        symbol: "FOAM",
+        exchangeAddress: "0xf79cb3bea83bd502737586a6e8b133c378fd1ff2", 
+        erc20Address: "0x4946Fcea7C692606e8908002e55A582af44AC121", 
+        logo: FoamLogo
     }
 ]
 
