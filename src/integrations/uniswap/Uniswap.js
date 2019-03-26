@@ -77,7 +77,7 @@ const Uniswap = (props) => {
                 let ethWithdrawValue = percentShare.multipliedBy(etherBalance)
                 ethWithdrawValue = BigNumber(Math.trunc(ethWithdrawValue.toNumber()))
                 ethWithdrawValue = ethWithdrawValue.dividedBy(ConvertFromWei)
-               
+                
 
                 let erc20WithdrawValueWei = percentShare.multipliedBy(erc20Balance)
                 erc20WithdrawValueWei = BigNumber(Math.trunc(erc20WithdrawValueWei.toNumber()))
@@ -98,9 +98,12 @@ const Uniswap = (props) => {
 
                 let ethValueErc20;
                 try {
-                    let erc20WeiNoSci = erc20WithdrawValueWei.toNumber().toFixedSpecial(0)
+                    
+                    let erc20WeiNoSci = erc20WithdrawValueWei.toNumber()
+                    
+                    erc20WeiNoSci = erc20WeiNoSci.toFixedSpecial(0)
                     //for some reason there is trailing '.' at the end
-                    erc20WeiNoSci = erc20WeiNoSci.slice(0,-1)
+                    erc20WeiNoSci = erc20WeiNoSci.replace('.','')
                     
                     ethValueErc20 = await exchangeContract.getTokenToEthInputPrice(erc20WeiNoSci)
                     ethValueErc20 = BigNumber(ethValueErc20.toString())
