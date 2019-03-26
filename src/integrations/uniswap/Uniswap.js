@@ -8,6 +8,7 @@ import { ethers } from 'ethers'
 import { setUniswapBalanceNw } from '../../actions/index'
 import { exchangeInfo } from '../../constants/uniswapExchanges'
 import { exchangeABI } from '../../contracts/exchangeABI'
+//import { factoryABI } from '../../contracts/factoryABI'
 import { erc20Abi } from '../../contracts/erc20Abi'
 import { ConvertFromWei } from '../../constants/index'
 import UniswapRow from './UniswapRow'
@@ -24,7 +25,6 @@ const Uniswap = (props) => {
         
         let totalValueTemp = BigNumber(0)
         let tokenData = []
-    
         
         async.each(exchangeInfo,async (item, callback)=> {
             //instantiate erc20 contract
