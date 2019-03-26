@@ -6,7 +6,7 @@ import SpankLogo from '../images/spank_logo.svg'
 import LoomLogo from '../images/loom_logo.svg'
 import TUSDLogo from '../images/tusd_logo.svg'
 import FoamLogo from '../images/foam_logo.png'
-import SnxLogo from '../images/snx_logo.svg'
+import SnxLogo from '../images/snx_logo.png'
 import sUSDLogo from '../images/sUSD_logo.png'
 
 
